@@ -1,0 +1,115 @@
+1
+00:00:02,180 --> 00:00:09,290
+Let's start with deploying, so reusing our web component. This is the modal we built in the last course
+
+2
+00:00:09,290 --> 00:00:11,470
+module and it works fine here,
+
+3
+00:00:11,600 --> 00:00:14,270
+now here is Chrome,
+
+4
+00:00:14,390 --> 00:00:17,560
+it would also work fine in Firefox by the way.
+
+5
+00:00:17,570 --> 00:00:19,480
+Now how would you reuse it there?
+
+6
+00:00:19,610 --> 00:00:21,080
+Well that's super simple.
+
+7
+00:00:21,080 --> 00:00:24,660
+You would use it in exactly the same way you use it here.
+
+8
+00:00:24,680 --> 00:00:32,390
+You have your web project which will have some HTML pages in the end, be that one HTML page you have
+
+9
+00:00:32,390 --> 00:00:39,710
+as part of your Angular or React project or be that a server side rendered HTML page, rendered with a
+
+10
+00:00:39,710 --> 00:00:45,270
+templating engine like Laravel's blade engine or EJS or pug for NodeJS.
+
+11
+00:00:45,300 --> 00:00:49,970
+So you will have some HTML which is served to your users in the end
+
+12
+00:00:50,120 --> 00:00:58,130
+and in that HTML page, you'll simply add one script import pointing at your Javascript file here
+
+13
+00:00:58,130 --> 00:01:01,670
+which contains all your component code
+
+14
+00:01:01,670 --> 00:01:08,240
+and of course you also need to ship your Javascript file onto the server where your HTML file lives
+
+15
+00:01:08,500 --> 00:01:09,610
+too.
+
+16
+00:01:09,650 --> 00:01:15,740
+So then you simply add that script import and you can start using your custom component because that is
+
+17
+00:01:15,740 --> 00:01:17,740
+exactly what we're doing here
+
+18
+00:01:17,930 --> 00:01:21,890
+and this is no special development only set up here.
+
+19
+00:01:21,980 --> 00:01:30,350
+This is a normal HTML page using our normal Javascript file which is served in a normal Chrome browser
+
+20
+00:01:30,920 --> 00:01:38,230
+and therefore of course, I could also open my index.html file with Firefox for example.
+
+21
+00:01:38,330 --> 00:01:44,930
+This opens up here and there, I can just click that button and have the same working web component because
+
+22
+00:01:44,960 --> 00:01:51,170
+the latest version of Firefox just as the latest version of Chrome natively supports the web component
+
+23
+00:01:51,170 --> 00:01:59,080
+specifications, so custom elements, the shadow DOM and so on. Here on the Mac, I can also try that in Safari.
+
+24
+00:01:59,950 --> 00:02:08,440
+There I also have my working web component because Safari just like Firefox and Chrome supports web
+
+25
+00:02:08,440 --> 00:02:09,750
+components.
+
+26
+00:02:09,820 --> 00:02:16,540
+Now the great exception again of course is the Internet Explorer and Edge but their support is coming
+
+27
+00:02:17,050 --> 00:02:24,820
+and still, this whole support thing, browser support thing is one of the reasons why stencil.js, a
+
+28
+00:02:24,820 --> 00:02:29,980
+tool that helps us with building web components, is very appealing.
+
+29
+00:02:29,980 --> 00:02:33,400
+Let's take a closer look at this browser support thing again.

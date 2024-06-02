@@ -1,0 +1,347 @@
+1
+00:00:02,200 --> 00:00:05,950
+We learned a lot about classes and arrow functions,
+
+2
+00:00:06,160 --> 00:00:12,070
+let's now turn our heads towards new operators we'll be able to use in the future of Javascript, the Spread
+
+3
+00:00:12,100 --> 00:00:14,040
+and the Rest operators.
+
+4
+00:00:14,320 --> 00:00:21,040
+Actually it's only one operator, three dots and yes, this may look strange but the operator is just three
+
+5
+00:00:21,040 --> 00:00:21,910
+dots,
+
+6
+00:00:22,000 --> 00:00:29,310
+now if we call it Spread or Rest depends on where we use it. The Spread operator is used to split up array
+
+7
+00:00:29,350 --> 00:00:31,960
+elements or object properties,
+
+8
+00:00:32,140 --> 00:00:35,470
+so we spread up an array or object.
+
+9
+00:00:35,560 --> 00:00:44,080
+For example if we have an old array and we want to add all the elements from that old array to a new
+
+10
+00:00:44,080 --> 00:00:51,070
+array and additionally, add a one and a two element, this first syntax would be what we use, three dots in
+
+11
+00:00:51,070 --> 00:00:57,250
+front of oldArray will simply pull out all the elements and add it to the newArray which we create
+
+12
+00:00:57,250 --> 00:01:01,800
+with square brackets and also of course then we can add more elements to it
+
+13
+00:01:01,810 --> 00:01:08,090
+since we just use the normal syntax with square brackets to create an array. The same for the object,
+
+14
+00:01:08,110 --> 00:01:12,270
+we create a new object with curly braces with the new prop
+
+15
+00:01:12,460 --> 00:01:14,770
+but then we also have
+
+16
+00:01:14,800 --> 00:01:23,560
+...oldObject to pull out all the properties of the oldObject and their values and add them as key value
+
+17
+00:01:23,560 --> 00:01:25,590
+pairs to the new object.
+
+18
+00:01:25,960 --> 00:01:28,240
+As a side note, if the old object
+
+19
+00:01:28,240 --> 00:01:30,240
+also had a new property,
+
+20
+00:01:30,400 --> 00:01:33,210
+it would be overridden by newProp 5 here,
+
+21
+00:01:33,220 --> 00:01:37,780
+so our own property takes precedence, this is the Spread operator.
+
+22
+00:01:37,930 --> 00:01:45,550
+Now the Rest operator is the same operator but used differently. Here it's used to merge a list of function
+
+23
+00:01:45,580 --> 00:01:47,170
+arguments into an array
+
+24
+00:01:47,380 --> 00:01:49,170
+and this shows us where we use it,
+
+25
+00:01:49,270 --> 00:01:52,040
+we use it in a function argument list,
+
+26
+00:01:52,070 --> 00:01:54,280
+here is an example. 
+
+27
+00:01:54,280 --> 00:01:57,640
+sortArgs receives an unlimited amount of arguments,
+
+28
+00:01:57,670 --> 00:02:06,310
+so one argument, two, three or whatever, with ... we only write one argument, args but we may actually
+
+29
+00:02:06,310 --> 00:02:07,690
+receive more than one
+
+30
+00:02:07,810 --> 00:02:11,020
+and they will all be merged together into an array.
+
+31
+00:02:11,020 --> 00:02:17,710
+So then we can apply array methods to our argument list or do whatever we want to do with our conveniently
+
+32
+00:02:17,710 --> 00:02:19,130
+stored arguments,
+
+33
+00:02:19,330 --> 00:02:20,400
+let's have a look at both
+
+34
+00:02:20,470 --> 00:02:20,880
+usages on
+
+35
+00:02:20,920 --> 00:02:22,980
+JSBin then.
+
+36
+00:02:23,090 --> 00:02:28,520
+So let's start with the Spread operator, I'll create an array of numbers,
+
+37
+00:02:28,790 --> 00:02:32,230
+so one, two, three, add as many as you want.
+
+38
+00:02:32,270 --> 00:02:36,110
+Now I want to create a new array, newNumbers
+
+39
+00:02:36,500 --> 00:02:40,860
+and as you saw, Spread is now simply used by adding three dots,
+
+40
+00:02:41,030 --> 00:02:48,410
+then the oldArray numbers and then potentially, you don't have to do that, new numbers like 4
+
+41
+00:02:48,470 --> 00:02:50,180
+and again that is optional.
+
+42
+00:02:50,690 --> 00:03:01,310
+With that if I now console log newNumbers here and I hit run, we get one, two, three, four, the oldArray
+
+43
+00:03:01,310 --> 00:03:04,020
+with all its elements and the new element
+
+44
+00:03:04,160 --> 00:03:06,240
+and actually, we don't add the old element,
+
+45
+00:03:06,260 --> 00:03:12,240
+if we were to do that without the dots, it would be included as one element inside the new element,
+
+46
+00:03:12,260 --> 00:03:17,110
+it really pulled out the old elements as you can clearly see.
+
+47
+00:03:17,210 --> 00:03:23,660
+So that's the Spread operator and you will see me use this throughout this course a couple of times on
+
+48
+00:03:23,660 --> 00:03:32,830
+both arrays and objects to for example conveniently copy arrays or add properties to an object whilst
+
+49
+00:03:32,830 --> 00:03:35,490
+safely copying that old object.
+
+50
+00:03:35,690 --> 00:03:40,940
+Again, I will obviously also always mention why I'm using that operator when I do in the course,
+
+51
+00:03:41,090 --> 00:03:43,700
+just be aware that it exists,
+
+52
+00:03:43,700 --> 00:03:50,110
+let's now see the same for objects. I'll create a person object here where I have a name,
+
+53
+00:03:50,120 --> 00:03:51,930
+let's say Max
+
+54
+00:03:52,580 --> 00:03:58,530
+and now I will have a newPerson object which is a Javascript object, a new one
+
+55
+00:03:58,720 --> 00:04:05,990
+where I first of all use the Spread operator on person to copy all the property value pairs of the old
+
+56
+00:04:05,990 --> 00:04:09,400
+object and potentially and that's also optional,
+
+57
+00:04:09,410 --> 00:04:11,090
+add a new property
+
+58
+00:04:11,360 --> 00:04:18,370
+and now if I console log newPerson, you may ignore this error which is thrown by JSBin,
+
+59
+00:04:18,360 --> 00:04:21,320
+the syntax will be supported in our course project,
+
+60
+00:04:21,710 --> 00:04:30,020
+if we do this, you see object is printed here with name Max and age 28, so it's taking the oldPerson and distributing
+
+61
+00:04:30,020 --> 00:04:31,350
+it into the newPerson,
+
+62
+00:04:31,360 --> 00:04:33,190
+that's the Spread operator.
+
+63
+00:04:33,680 --> 00:04:40,020
+Now the Rest operator which is used less often though is used in a function
+
+64
+00:04:40,370 --> 00:04:43,730
+and you could of course also use an ES6 arrow function.
+
+65
+00:04:43,730 --> 00:04:50,690
+So there, we could have a filter function, whatever you want to name it and we get a couple of args and
+
+66
+00:04:50,690 --> 00:04:54,710
+you don't have to name this args here, you can also name this a or whatever you want
+
+67
+00:04:54,800 --> 00:04:57,860
+but you have to use the three dots in front of it.
+
+68
+00:04:57,920 --> 00:05:00,700
+So then there, you can simply return and
+
+69
+00:05:00,710 --> 00:05:06,200
+we could use the inline syntax here to write it all in one line without the return keyword,
+
+70
+00:05:06,520 --> 00:05:07,690
+here I'll use return,
+
+71
+00:05:07,700 --> 00:05:13,640
+you could return args and then let's say we call the built-in filter method which is available on arrays
+
+72
+00:05:13,730 --> 00:05:20,210
+and keep in mind, the dots here are used as a Rest operator and that merges the arguments into an array,
+
+73
+00:05:20,270 --> 00:05:28,130
+so we can use array methods like filter. Filter will execute a function on every element in the passed in
+
+74
+00:05:28,130 --> 00:05:28,810
+array,
+
+75
+00:05:28,940 --> 00:05:35,480
+so here we would get our element and then we could use an inline arrow function to simply say return
+
+76
+00:05:35,480 --> 00:05:36,740
+true or false
+
+77
+00:05:36,740 --> 00:05:42,200
+which filter expects if the element is equal to 1.
+
+78
+00:05:42,200 --> 00:05:44,470
+Now that might be a lot of syntax you don't know,
+
+79
+00:05:44,540 --> 00:05:48,520
+three equal signs checks for type and value equality,
+
+80
+00:05:48,620 --> 00:05:52,450
+so that also has to be a number and this is just an arrow function
+
+81
+00:05:52,460 --> 00:05:54,430
+we passed to the built-in filter method,
+
+82
+00:05:54,440 --> 00:05:57,850
+so this has nothing to do with Rest or Spread. With that
+
+83
+00:05:57,860 --> 00:06:05,420
+we could call filter and let's console log it to see something, console log filter, so our filter function
+
+84
+00:06:05,420 --> 00:06:14,120
+here on let's say one, two, three and actually, we should only log one here as an array though because we filter
+
+85
+00:06:14,120 --> 00:06:18,770
+this array which is created with the Rest operator, with the three dots here.
+
+86
+00:06:18,800 --> 00:06:23,180
+So that's Rest and Spread, again Spread is the usage of the three dots
+
+87
+00:06:23,250 --> 00:06:25,530
+you'll see more often in this course.

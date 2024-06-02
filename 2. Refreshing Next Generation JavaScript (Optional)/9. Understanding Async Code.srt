@@ -1,0 +1,59 @@
+1
+00:00:02,550 --> 00:00:02,990
+Now
+
+2
+00:00:03,100 --> 00:00:08,240
+another important topic which is only partly related to next gen Javascript
+
+3
+00:00:08,250 --> 00:00:10,100
+and you really should already know that
+
+4
+00:00:10,260 --> 00:00:14,080
+is that Javascript of course is able to handle asynchronous code.
+
+5
+00:00:14,130 --> 00:00:17,950
+Let's say you are sending an HTTP request from inside your Javascript app,
+
+6
+00:00:18,000 --> 00:00:25,440
+then there are different solutions like callbacks or promises to handle the response of that asynchronous
+
+7
+00:00:25,440 --> 00:00:32,540
+task or of this HTTP request without blocking code execution of your code until the response is there.
+
+8
+00:00:32,550 --> 00:00:36,870
+Now I can only recommend this article to which you find a link attached to this video,
+
+9
+00:00:37,020 --> 00:00:41,770
+if you want to learn more about async code in Javascript and different solutions to it,
+
+10
+00:00:41,780 --> 00:00:47,820
+in this course, we'll use promises at a later point of time, so you should be able to understand that and
+
+11
+00:00:47,820 --> 00:00:51,200
+you also find other resources on that. In case you don't
+
+12
+00:00:51,210 --> 00:00:55,190
+know promises and you really need to learn it from scratch,
+
+13
+00:00:55,200 --> 00:00:57,130
+take a look at those resources,
+
+14
+00:00:57,180 --> 00:01:01,200
+otherwise just take them as a reference in case something is unclear
+
+15
+00:01:01,230 --> 00:01:02,340
+at a later point of time.

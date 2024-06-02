@@ -1,0 +1,23 @@
+1
+00:00:02,140 --> 00:00:09,400
+Now with basics about stencil.js covered and our first component being built, let's dive into the a little
+
+2
+00:00:09,400 --> 00:00:15,220
+more advanced features, features that we might not need in every single component we're building
+
+3
+00:00:15,220 --> 00:00:21,970
+but certainly in a decent amount of them. We'll dive into the lifecycle of stencil components, into
+
+4
+00:00:21,970 --> 00:00:30,280
+emitting custom events and listening to events in different ways and into writing more reactive stencil
+
+5
+00:00:30,280 --> 00:00:35,530
+components that can adapt to changing circumstances in an easier way.
+
+6
+00:00:35,530 --> 00:00:36,420
+So let's dive in.

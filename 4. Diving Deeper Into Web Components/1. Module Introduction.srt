@@ -1,0 +1,31 @@
+1
+00:00:02,250 --> 00:00:07,860
+So now that we explored the basics about web components and how we generally can get started working with
+
+2
+00:00:07,860 --> 00:00:12,440
+them, how we can get started building them, now that we did that,
+
+3
+00:00:12,450 --> 00:00:20,150
+I want to dive into some more advanced features or into well, the advanced basics you could call it.
+
+4
+00:00:20,160 --> 00:00:26,130
+So basically into the other things, the next steps you need to know about building web components.
+
+5
+00:00:26,220 --> 00:00:31,840
+And in this module, we'll have a detailed look at how we can work with these slots
+
+6
+00:00:31,860 --> 00:00:38,730
+we already started working with, how we can react to changes in our attributes and how we can also work on
+
+7
+00:00:38,730 --> 00:00:46,360
+the styling side to make sure our components, our custom elements look the way we want them to look like.
+
+8
+00:00:46,470 --> 00:00:48,840
+So let's dive into all these things step by step.

@@ -1,0 +1,39 @@
+1
+00:00:02,330 --> 00:00:09,290
+With all the core basics out of the way, let's dive into building more complex components or one more
+
+2
+00:00:09,290 --> 00:00:13,960
+complex component in this module. We'll build a modal component,
+
+3
+00:00:14,000 --> 00:00:21,350
+so like this pop-up, this overlay inside of a page with a nice backdrop behind it where we can pass
+
+4
+00:00:21,410 --> 00:00:25,220
+our own content into it and which we can also configure,
+
+5
+00:00:25,370 --> 00:00:29,530
+for example where we can control from outside whether it's shown or not.
+
+6
+00:00:29,720 --> 00:00:36,740
+We'll also learn how we can dispatch our own events from inside our web component so that we can react
+
+7
+00:00:36,800 --> 00:00:39,290
+to these custom events outside of it
+
+8
+00:00:39,440 --> 00:00:44,570
+and we'll see a lot of the features you already learned about in the last modules in action too.
+
+9
+00:00:44,720 --> 00:00:49,280
+So a great practice as well as many exciting new features,
+
+10
+00:00:49,280 --> 00:00:50,170
+let's dive in.

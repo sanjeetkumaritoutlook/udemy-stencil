@@ -1,0 +1,55 @@
+1
+00:00:02,150 --> 00:00:09,950
+So over the last modules, we had a very close look at all the basics you need to have set to build your
+
+2
+00:00:09,950 --> 00:00:18,710
+own web components, your own custom HTML elements. And now that we built our first HTML elements and
+
+3
+00:00:18,710 --> 00:00:22,400
+used a broad variety of features that help us with that,
+
+4
+00:00:22,430 --> 00:00:30,800
+the obvious question is, how do we get these custom HTML elements we built for us here into the different
+
+5
+00:00:30,800 --> 00:00:35,650
+projects we might be building or into the projects of other people,
+
+6
+00:00:35,690 --> 00:00:39,500
+how can we deploy our web component
+
+7
+00:00:39,500 --> 00:00:46,580
+so to say? Now towards the end of the course, I will have a detailed deployment module where I will show
+
+8
+00:00:46,580 --> 00:00:53,540
+you things like how to publish your own libraries to npm and what npm is, is something we'll learn
+
+9
+00:00:53,540 --> 00:00:54,320
+until then.
+
+10
+00:00:54,530 --> 00:01:02,360
+So a detailed deployment module will come later at the course after we covered stencil because maybe
+
+11
+00:01:02,360 --> 00:01:08,420
+you already wondered what's this stencil thing which is mentioned in the course title. Well we'll have
+
+12
+00:01:08,420 --> 00:01:13,760
+a look at it right now and we will understand why it can be helpful,
+
+13
+00:01:13,760 --> 00:01:16,580
+it is a tool that helps us with building web components
+
+14
+00:01:16,670 --> 00:01:19,440
+and here is why we might want to use it.

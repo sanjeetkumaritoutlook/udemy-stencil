@@ -1,0 +1,103 @@
+1
+00:00:02,330 --> 00:00:03,780
+Now this is all great.
+
+2
+00:00:03,780 --> 00:00:09,660
+Now one thing is missing though, we can't really open or hide our drawer,
+
+3
+00:00:09,690 --> 00:00:11,550
+right now it's always visible.
+
+4
+00:00:11,550 --> 00:00:18,960
+Now there are various ways of making sure we can open and hide it, one would be to add a new prop, the
+
+5
+00:00:19,050 --> 00:00:24,650
+open prop maybe which is a boolean and let's say and this is true or false obviously.
+
+6
+00:00:24,930 --> 00:00:32,600
+Now we can use such a property outside now as an attribute and how could we use it?
+
+7
+00:00:32,850 --> 00:00:39,840
+Well we could for example wrap all our content here into a conditional statement to only render this
+
+8
+00:00:40,230 --> 00:00:41,630
+if this is true.
+
+9
+00:00:42,890 --> 00:00:49,100
+This also shows you how you can render content conditionally in this JSX syntax, it's easier than
+
+10
+00:00:49,100 --> 00:00:50,410
+you might think.
+
+11
+00:00:50,420 --> 00:00:56,340
+I'll simply add a new variable here in the render function, content and by default, this is null,
+
+12
+00:00:56,750 --> 00:00:58,190
+so no content
+
+13
+00:00:58,500 --> 00:01:06,470
+but if this is open, so this is a boolean so checking this will, well either see it is true and then go
+
+14
+00:01:06,470 --> 00:01:10,250
+into the if block or it's false and we'll skip it.
+
+15
+00:01:10,250 --> 00:01:16,310
+If this is true though, I'll set content equal to what I previously rendered in all cases.
+
+16
+00:01:16,370 --> 00:01:19,820
+So I'll just copy that and store this in the variable,
+
+17
+00:01:19,880 --> 00:01:25,730
+you can store JSX code in variables because behind the scenes, this is just normal Javascript code,
+
+18
+00:01:26,060 --> 00:01:30,500
+just looking a little bit more appealing and easier to work with
+
+19
+00:01:30,500 --> 00:01:37,900
+and then here, I return the content and the content now either is null or our own JSX code.
+
+20
+00:01:38,450 --> 00:01:43,060
+So now we don't see anything because by default, we don't have open set to true.
+
+21
+00:01:43,310 --> 00:01:49,160
+If I interact with my side drawer though and you might need to reload the page for this to work and I
+
+22
+00:01:49,160 --> 00:01:53,600
+simply add this open attribute and I don't even need to set it to true,
+
+23
+00:01:53,780 --> 00:01:55,850
+adding it like this already counts as true,
+
+24
+00:01:55,960 --> 00:01:58,510
+then you see I can see my side drawer.
+
+25
+00:01:58,670 --> 00:02:01,960
+So this is a nice way of toggling its display state
+
+26
+00:02:02,120 --> 00:02:05,930
+and this is one possible way of ensuring that we can see it.

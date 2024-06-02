@@ -1,0 +1,215 @@
+1
+00:00:02,170 --> 00:00:09,110
+We learned about imports and exports, another core feature of next generation Javascript are classes.
+
+2
+00:00:09,340 --> 00:00:14,170
+If you're coming from some other programming language, you might already know classes,
+
+3
+00:00:14,230 --> 00:00:17,830
+classes are essentially blueprints for objects,
+
+4
+00:00:17,830 --> 00:00:24,340
+in our case here, for Javascript objects. A class is created with the class keyword and a class can have
+
+5
+00:00:24,370 --> 00:00:28,060
+both properties and methods.
+
+6
+00:00:28,060 --> 00:00:33,670
+Methods are simply functions attached to classes where properties are variables attached to classes
+
+7
+00:00:33,670 --> 00:00:39,390
+you could say, we'll use both in this course and I will obviously always explain what we're doing here
+
+8
+00:00:39,430 --> 00:00:46,810
+when we add such a property or method. A class is instantiated like this, with the new keyword
+
+9
+00:00:46,930 --> 00:00:50,750
+and this might of course look familiar to you if you worked a bit with Javascript,
+
+10
+00:00:50,800 --> 00:00:56,140
+you might know this from constructor functions and indeed, classes are kind of a more convenient way of
+
+11
+00:00:56,140 --> 00:01:02,470
+creating constructor functions. So you create Javascript objects with classes as blueprints,
+
+12
+00:01:02,470 --> 00:01:06,270
+that's the idea and classes also support inheritance
+
+13
+00:01:06,280 --> 00:01:11,980
+which means you have another class which you inherit from taking all its properties and methods and
+
+14
+00:01:11,980 --> 00:01:15,160
+potentially adding new properties and methods.
+
+15
+00:01:15,160 --> 00:01:17,090
+That also might look familiar to you, 
+
+16
+00:01:17,200 --> 00:01:19,400
+you might know this from prototypes,
+
+17
+00:01:19,420 --> 00:01:21,750
+let's have a look at classes in action then.
+
+18
+00:01:22,240 --> 00:01:24,110
+Let's create a new class here,
+
+19
+00:01:24,220 --> 00:01:27,270
+I'll name it person, just like this, 
+
+20
+00:01:27,280 --> 00:01:30,640
+Then you have curly braces to mark the class body
+
+21
+00:01:30,640 --> 00:01:38,020
+and now there, we can start using properties. Now in its simplest form, a property is added by adding a
+
+22
+00:01:38,020 --> 00:01:41,740
+constructor, that is a default function method
+
+23
+00:01:41,770 --> 00:01:47,440
+you can add to any class which will be executed whenever you instantiate the class and a method is
+
+24
+00:01:47,440 --> 00:01:53,920
+created just with the name of the method, parentheses and then curly braces and in there, we can now set
+
+25
+00:01:53,920 --> 00:02:00,460
+up properties with this keyword and we could write this name equals Max for example.
+
+26
+00:02:00,700 --> 00:02:02,660
+We can now also add a method,
+
+27
+00:02:02,840 --> 00:02:12,670
+printMyName and there, we could simply output this name, referring to the name property we created.
+
+28
+00:02:12,670 --> 00:02:20,210
+Now we can use this class to store an instance in a constant with newPerson and then we can execute
+
+29
+00:02:20,230 --> 00:02:21,460
+person
+
+30
+00:02:21,460 --> 00:02:23,840
+printMyName.
+
+31
+00:02:24,100 --> 00:02:27,710
+If we now hit run, we see Max,
+
+32
+00:02:27,810 --> 00:02:30,870
+this is how easy we can use a class.
+
+33
+00:02:30,910 --> 00:02:33,310
+Now I said that classes can also inherit,
+
+34
+00:02:33,430 --> 00:02:43,580
+so what we can do is we can create another class, human and there, we might also add a constructor to
+
+35
+00:02:43,580 --> 00:02:48,770
+set this gender equal to male or female of course if you want,
+
+36
+00:02:48,800 --> 00:02:57,810
+by default whatever you want and there you could add printGender and then output console log this gender
+
+37
+00:02:58,140 --> 00:03:04,620
+and now if person extends and that's a keyword again, extends human,
+
+38
+00:03:04,620 --> 00:03:12,220
+now we inherit this property and this method printGender and we can use both on the person as well, 
+
+39
+00:03:12,690 --> 00:03:17,290
+so we can also call person printGender like that.
+
+40
+00:03:17,340 --> 00:03:21,680
+However before we run this successfully or actually let's try it,
+
+41
+00:03:21,780 --> 00:03:28,390
+we'll get an error that we must call the super constructor in the derived class and that's important.
+
+42
+00:03:28,590 --> 00:03:34,250
+If you are extending another class and you are implementing the constructor which you don't have to
+
+43
+00:03:34,260 --> 00:03:41,250
+but if you are, then you have to add super, this special super method in the constructor.
+
+44
+00:03:41,280 --> 00:03:47,370
+It's a keyword and it simply executes the parent constructor too which you of course have to to correct
+
+45
+00:03:47,370 --> 00:03:49,500
+the initialize the parent class.
+
+46
+00:03:49,530 --> 00:03:56,300
+So now you hit clear and run, you'll see Max and Male and obviously, you could now go into your person
+
+47
+00:03:56,310 --> 00:04:02,850
+class and still set gender there to Female which is not 100% correct here but just to showcase that
+
+48
+00:04:02,850 --> 00:04:03,850
+this works,
+
+49
+00:04:03,870 --> 00:04:08,910
+now you see we print Female, even though we're still calling printGender here
+
+50
+00:04:09,030 --> 00:04:11,650
+but it is extended by person.
+
+51
+00:04:12,120 --> 00:04:13,640
+So these are classes,
+
+52
+00:04:13,760 --> 00:04:16,700
+this is how you will see me use it in this course
+
+53
+00:04:16,790 --> 00:04:22,950
+and it's important to understand that classes are just blueprints for Javascript objects and are very
+
+54
+00:04:22,950 --> 00:04:28,470
+comparable to constructor functions where inheritance is comparable to prototypes.

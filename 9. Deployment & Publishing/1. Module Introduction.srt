@@ -1,0 +1,39 @@
+1
+00:00:02,310 --> 00:00:06,620
+Now that we had a very detailed look at the web components in general
+
+2
+00:00:06,680 --> 00:00:11,660
+and stencil.js in detail which helps you building these web components,
+
+3
+00:00:11,860 --> 00:00:18,860
+let's have a look at how we can actually deploy and publish and share our web components, across
+
+4
+00:00:18,950 --> 00:00:25,730
+our own projects as well as with other people because that is one core advantage of web components after
+
+5
+00:00:25,730 --> 00:00:26,020
+all.
+
+6
+00:00:26,060 --> 00:00:32,750
+We can easily drop them into any other project to add that piece of functionality which we encapsulated
+
+7
+00:00:32,780 --> 00:00:34,720
+in our web component.
+
+8
+00:00:34,820 --> 00:00:42,160
+Now for this, we'll build our stencil web components, so we'll generate these native web components and I'll
+
+9
+00:00:42,170 --> 00:00:50,180
+then show you different ways of using those generated web components in different projects and how to
+
+10
+00:00:50,300 --> 00:00:52,910
+get them into different projects.

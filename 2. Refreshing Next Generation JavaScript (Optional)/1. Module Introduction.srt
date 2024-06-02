@@ -1,0 +1,63 @@
+1
+00:00:02,410 --> 00:00:05,350
+This is a totally optional module.
+
+2
+00:00:05,590 --> 00:00:15,100
+If you're up to date with ES6+ Javascript features like arrow functions, let and const or with general
+
+3
+00:00:15,100 --> 00:00:22,300
+important Javascript basics like how to work with array and the built-in array methods and things like
+
+4
+00:00:22,300 --> 00:00:22,720
+that,
+
+5
+00:00:22,750 --> 00:00:26,500
+then you may absolutely skip this module. In this course,
+
+6
+00:00:26,500 --> 00:00:30,170
+we'll use both Javascript and later also a bit of Typescript,
+
+7
+00:00:30,190 --> 00:00:31,660
+you don't need to know Typescript,
+
+8
+00:00:31,690 --> 00:00:32,490
+no worries
+
+9
+00:00:32,740 --> 00:00:39,580
+but in both languages so to say, we will use modern Javascript features and therefore, definitely go
+
+10
+00:00:39,580 --> 00:00:40,880
+through this refresher
+
+11
+00:00:40,930 --> 00:00:47,290
+if you're not sure if you got all these basics set, if you really are familiar with the latest Javascript
+
+12
+00:00:47,290 --> 00:00:53,470
+features or at least keep this module in mind so that you can come back to it if you later encounter
+
+13
+00:00:53,500 --> 00:00:56,290
+some syntax, some Javascript feature
+
+14
+00:00:56,320 --> 00:00:58,050
+you're just not sure about.
+
+15
+00:00:58,390 --> 00:01:04,390
+So in this module, I'll briefly walk you through important next generation Javascript features, what they
+
+16
+00:01:04,390 --> 00:01:10,060
+do, why we use them and how we use them, so that we're all on the same page for the rest of this course.

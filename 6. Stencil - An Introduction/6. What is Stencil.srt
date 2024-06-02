@@ -1,0 +1,159 @@
+1
+00:00:02,460 --> 00:00:04,420
+For this, I'm using Visual Studio Code
+
+2
+00:00:04,470 --> 00:00:09,810
+and I opened this web components stencil folder recreated and this is how it looks like. It obviously
+
+3
+00:00:09,810 --> 00:00:12,430
+has more files than our old project
+
+4
+00:00:12,570 --> 00:00:18,420
+and this is because stencil again is a tool that will spit out normal web components in the end,
+
+5
+00:00:18,420 --> 00:00:23,670
+native web components but it will make this whole build process a bit easier.
+
+6
+00:00:23,670 --> 00:00:26,290
+Now let's see how stencil works in detail.
+
+7
+00:00:26,310 --> 00:00:28,450
+Stencil and that is really important
+
+8
+00:00:28,530 --> 00:00:34,680
+is not a Javascript framework like Angular and it's not a library like React.
+
+9
+00:00:34,680 --> 00:00:42,000
+It is a tool that runs on your machine which you will never deploy to a website that is then running
+
+10
+00:00:42,000 --> 00:00:42,450
+in the web,
+
+11
+00:00:42,450 --> 00:00:46,010
+it is really just a tool on your machine, like Photoshop is
+
+12
+00:00:46,020 --> 00:00:52,800
+so to say. It's a compiler for native web components and in the end, what it will spit out is a native
+
+13
+00:00:52,800 --> 00:00:55,700
+Javascript web component as we wrote it manually
+
+14
+00:00:55,740 --> 00:01:01,800
+in the first part of this course. Now the idea behind stencil is that stencil.js gives us a way
+
+15
+00:01:01,800 --> 00:01:09,240
+nicer syntax and a lot of convenience features which we can use to write web components in a more convenient
+
+16
+00:01:09,330 --> 00:01:14,730
+and error safe way using Javascript and also Typescript,
+
+17
+00:01:14,760 --> 00:01:16,770
+I'll come back to what Typescript is in a second
+
+18
+00:01:16,770 --> 00:01:22,400
+in case you don't know that, it is basically something building up on Javascript and in the end, stencil
+
+19
+00:01:22,400 --> 00:01:25,970
+will then compile that code down to native Javascript web components.
+
+20
+00:01:26,040 --> 00:01:30,630
+So we don't need to ship any extra library to make these components work in the browser,
+
+21
+00:01:30,630 --> 00:01:36,510
+it will be the same type of component we build manually, just now being built in a bit of a more convenient
+
+22
+00:01:36,510 --> 00:01:37,050
+way
+
+23
+00:01:37,260 --> 00:01:44,700
+and with the additional feature of adding all polyfills that might be required in a browser automatically
+
+24
+00:01:44,940 --> 00:01:49,030
+so that deploying our web components becomes even easier.
+
+25
+00:01:49,070 --> 00:01:55,940
+Now what is Typescript? Typescript is a superset to Javascript which means it builds up on Javascript.
+
+26
+00:01:56,040 --> 00:01:59,340
+It simply adds extra features to the Javascript language,
+
+27
+00:01:59,340 --> 00:02:04,390
+for example decorators, we can use types there, that is the major thing
+
+28
+00:02:04,410 --> 00:02:06,470
+hence the name. By default
+
+29
+00:02:06,480 --> 00:02:12,480
+Javascript is a weekly typed language which means when we have a variable, we don't have to define that
+
+30
+00:02:12,540 --> 00:02:15,250
+this variable may only hold a number or string,
+
+31
+00:02:15,390 --> 00:02:20,720
+we can have a string in a variable and then later change it to a number and we won't get any error.
+
+32
+00:02:20,940 --> 00:02:23,160
+Typescript is stricter about that,
+
+33
+00:02:23,310 --> 00:02:27,940
+we have to be clear about the types we use in a function or in a variable there
+
+34
+00:02:28,050 --> 00:02:34,050
+but that gives us a lot of safety during development because we get errors when we start using some
+
+35
+00:02:34,050 --> 00:02:38,940
+variables incorrectly, when we try to multiply some text or anything like that,
+
+36
+00:02:39,000 --> 00:02:45,780
+such errors are avoided in Typescript and it additionally also gives us features that are part of Javascript
+
+37
+00:02:45,960 --> 00:02:51,730
+but are actually next generation Javascript features. We can use them in Typescript but in the end, Typescript
+
+38
+00:02:51,730 --> 00:02:59,460
+will compile to Javascript and if we want to and stencil wants to, we get Javascript code that runs
+
+39
+00:02:59,460 --> 00:03:05,670
+in older browsers too. So we can use the latest of the latest and still get Javascript code that runs
+
+40
+00:03:05,670 --> 00:03:06,780
+in older browsers too.

@@ -1,0 +1,79 @@
+1
+00:00:02,400 --> 00:00:08,260
+Welcome on board of this course, I'm very happy that you joined me in this course because in this course, we'll
+
+2
+00:00:08,260 --> 00:00:10,700
+dive into a super exciting topic,
+
+3
+00:00:10,870 --> 00:00:12,990
+we'll dive into web components.
+
+4
+00:00:13,000 --> 00:00:19,780
+You will learn how to build your own custom HTML elements with features that are already baked into
+
+5
+00:00:19,780 --> 00:00:22,390
+browsers and into modern Javascript.
+
+6
+00:00:22,390 --> 00:00:26,930
+You will not need any other third party library or framework,
+
+7
+00:00:26,980 --> 00:00:30,550
+you will not need Angular or React or JQuery,
+
+8
+00:00:30,820 --> 00:00:36,760
+you will learn a technology or you will learn about a technology that works as you see it in this course
+
+9
+00:00:37,060 --> 00:00:42,430
+out of the box. In this course, you will not just learn everything about web components from scratch
+
+10
+00:00:42,520 --> 00:00:47,250
+and we will write plenty of web components like a modal or a side drawer,
+
+11
+00:00:47,410 --> 00:00:53,250
+you will not just learn about these features in this course, you will also learn about a tool, stencil.js
+
+12
+00:00:53,260 --> 00:01:00,220
+that also spits out native web components but makes the development of these way easier even.
+
+13
+00:01:00,400 --> 00:01:05,470
+So you will learn about the vanilla Javascript web components and then you will learn an even easier
+
+14
+00:01:05,470 --> 00:01:08,750
+way of developing such components with the help of stencil.js.
+
+15
+00:01:08,780 --> 00:01:14,710
+And you will learn how to build your own custom elements, like your own custom modal or side drawer,
+
+16
+00:01:14,770 --> 00:01:19,990
+all things we will build in this course to learn about the different features that make up these custom
+
+17
+00:01:19,990 --> 00:01:22,120
+elements step-by-step.
+
+18
+00:01:22,150 --> 00:01:24,860
+So let's dive into the most important question first,
+
+19
+00:01:24,880 --> 00:01:31,750
+what in detail are web components before I then give you an overview of the course and we then dive deeply
+
+20
+00:01:31,870 --> 00:01:35,660
+into web components and everything that makes up web components.

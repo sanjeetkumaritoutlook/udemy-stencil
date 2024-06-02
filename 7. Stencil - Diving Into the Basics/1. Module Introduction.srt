@@ -1,0 +1,23 @@
+1
+00:00:02,650 --> 00:00:09,340
+So now that we had a first look at stencil.js and we have a general idea of why we want to use
+
+2
+00:00:09,340 --> 00:00:12,100
+it and how we can create a new project with it,
+
+3
+00:00:12,130 --> 00:00:19,630
+let's finally dive into the basics about stencil.js. How we use it, how we use its special syntax,
+
+4
+00:00:19,630 --> 00:00:26,140
+this JSX thing, how we use Typescript in case you're not familiar with Typescript, we'll dive into
+
+5
+00:00:26,140 --> 00:00:32,320
+all these things in this module and we will learn how we can start building web components with stencil.js
+
+6
+00:00:32,320 --> 00:00:32,890
+.

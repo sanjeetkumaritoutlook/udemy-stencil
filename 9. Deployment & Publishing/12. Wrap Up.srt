@@ -1,0 +1,63 @@
+1
+00:00:02,230 --> 00:00:05,230
+So that is web components and how you can use them.
+
+2
+00:00:05,380 --> 00:00:10,600
+We now saw how we can build our projects and get that that dist output here, how we can drag and drop
+
+3
+00:00:10,600 --> 00:00:16,450
+that into a project if we want to import it with script tags like this, how we can alternatively publish
+
+4
+00:00:16,450 --> 00:00:22,810
+it to npm though to have it published there either publicly or if we have a paid private account, we can
+
+5
+00:00:23,050 --> 00:00:29,980
+also publish it privately to only share it amongst our different projects or inside of our company and how
+
+6
+00:00:29,980 --> 00:00:36,810
+we can then install this with npm install into any project that is managed by npm and then make it work,
+
+7
+00:00:36,820 --> 00:00:43,720
+for example in our Angular app with adjustments to the main.ts file by defining the elements and our
+
+8
+00:00:43,720 --> 00:00:50,350
+app module by informing Angular about the fact that we're using custom elements. How we can make it in
+
+9
+00:00:50,350 --> 00:00:56,830
+React alternatively, to be able to use it there too by simply defining the elements in index.js file
+
+10
+00:00:56,830 --> 00:00:58,880
+after adding them,
+
+11
+00:00:58,900 --> 00:01:05,740
+for example with npm install and how we can also make our components work by also defining them in a Vue
+
+12
+00:01:05,740 --> 00:01:08,180
+project here in the main.js file,
+
+13
+00:01:08,200 --> 00:01:14,110
+so before we mount our root component. If you want to learn more about React, Vue or Angular, definitely
+
+14
+00:01:14,110 --> 00:01:16,030
+have a look at my dedicated courses,
+
+15
+00:01:16,030 --> 00:01:21,880
+I got courses on all these projects but now you know how you can use your stencil build web components
+
+16
+00:01:22,000 --> 00:01:23,960
+in any of these projects.

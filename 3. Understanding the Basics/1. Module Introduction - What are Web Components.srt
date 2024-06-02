@@ -1,0 +1,223 @@
+1
+00:00:02,240 --> 00:00:08,750
+So let's dive into the basics about web components then, how they generally work, how we create our own
+
+2
+00:00:08,750 --> 00:00:09,740
+web components
+
+3
+00:00:09,830 --> 00:00:13,500
+and for this, we will use vanilla Javascript.
+
+4
+00:00:13,580 --> 00:00:22,140
+This means no third party libraries, no other packages, just Javascript as it natively runs in the browser,
+
+5
+00:00:22,310 --> 00:00:24,090
+at least in modern browsers
+
+6
+00:00:24,140 --> 00:00:30,350
+and I'll come back to how browser support looks like and how we can build web components that run in
+
+7
+00:00:30,350 --> 00:00:32,440
+a broad variety of browsers
+
+8
+00:00:32,510 --> 00:00:33,800
+later in the course.
+
+9
+00:00:34,190 --> 00:00:39,460
+But first of all, let me come back to the question what web components are.
+
+10
+00:00:39,740 --> 00:00:45,680
+Obviously we already learned that web components are basically our own HTML tags, like my tooltip
+
+11
+00:00:45,680 --> 00:00:53,240
+here which is not a tag built into the web or built into the browser and that these are basically
+
+12
+00:00:53,250 --> 00:00:59,510
+HTML tag which we define in Javascript code and which we then can use on our page.
+
+13
+00:00:59,510 --> 00:01:09,680
+So web components are really as we use them, custom HTML elements but they are made up of three, theoretically
+
+14
+00:01:09,680 --> 00:01:13,220
+four but three important parts.
+
+15
+00:01:13,370 --> 00:01:20,510
+The first and the core part that makes up web components, the web components specification set is the
+
+16
+00:01:20,600 --> 00:01:23,660
+custom HTML elements specification
+
+17
+00:01:23,870 --> 00:01:27,660
+and since we in the end build custom HTML elements,
+
+18
+00:01:27,780 --> 00:01:29,650
+this is the core part.
+
+19
+00:01:29,660 --> 00:01:36,530
+This is essentially a bunch of Javascript functionalities that allow us to define our own HTML tags
+
+20
+00:01:36,560 --> 00:01:38,330
+and the logic behind them,
+
+21
+00:01:38,330 --> 00:01:41,020
+so this is a crucial part.
+
+22
+00:01:41,090 --> 00:01:47,550
+Now you might wonder ok what else could be important if we are talking about creating our own custom
+
+23
+00:01:47,630 --> 00:01:49,250
+HTML elements.
+
+24
+00:01:49,250 --> 00:01:58,270
+Well there are two other pieces which are also very important and which are used in that Javascript logic
+
+25
+00:01:58,280 --> 00:02:07,670
+we write behind our custom HTML element and the first additional set of functions or of features
+
+26
+00:02:07,730 --> 00:02:15,250
+offered in Javascript that is important related to creating custom elements is the shadow DOM specification.
+
+27
+00:02:15,410 --> 00:02:23,660
+The shadow DOM specification is all about giving us some features to create our own DOM tree, our own
+
+28
+00:02:23,870 --> 00:02:31,070
+elements behind that element you could say that are hidden away from the main DOM and I will come
+
+29
+00:02:31,070 --> 00:02:34,970
+back to that in more detail later where this will become clearer,
+
+30
+00:02:34,970 --> 00:02:42,080
+so which is in the end just allowing us to define our own HTML tags which are then grouped together
+
+31
+00:02:42,110 --> 00:02:50,280
+behind our custom HTML tag and which are separated from our main, our normal DOM
+
+32
+00:02:50,390 --> 00:02:56,840
+and this is especially helpful when we talk about CSS styling because the shadow DOM will allow
+
+33
+00:02:56,840 --> 00:03:02,760
+us to define CSS styles that only affect our custom element
+
+34
+00:03:02,930 --> 00:03:11,250
+and even if we style a h1 tag in our custom element, we would not affect other h1 tags on the page
+
+35
+00:03:11,390 --> 00:03:15,870
+and this will become all clearer once we actually use it and dive deeper into it.
+
+36
+00:03:15,980 --> 00:03:21,290
+So it's another crucial part when it comes to separating our logic from the rest of the page, you could
+
+37
+00:03:21,290 --> 00:03:22,130
+say.
+
+38
+00:03:22,610 --> 00:03:28,720
+The third important specification is about templates and slots,
+
+39
+00:03:28,790 --> 00:03:36,620
+this is also something we will use in great detail which in the end allows us to define our own HTML structure
+
+40
+00:03:36,620 --> 00:03:43,980
+which is hidden behind our custom element and which allows us to add some flexible entry points, these
+
+41
+00:03:44,120 --> 00:03:50,290
+so-called slots that we can then actually populate with information from outside
+
+42
+00:03:50,480 --> 00:03:57,200
+when we use our custom element and again, this is something which will become clearer later.
+
+43
+00:03:57,290 --> 00:04:03,050
+So I know that this is all very confusing right now because I'm throwing a lot of interesting words
+
+44
+00:04:03,050 --> 00:04:09,290
+around, a lot of specifications without explaining in detail what they do because it makes more sense
+
+45
+00:04:09,290 --> 00:04:15,440
+to gradually build up the knowledge and we will actually start with custom HTML elements before we
+
+46
+00:04:15,560 --> 00:04:21,170
+add these other features, before we add the shadow DOM and the templates.
+
+47
+00:04:21,170 --> 00:04:28,690
+Now I also mentioned that there are four specifications that make up the web components spec and the last
+
+48
+00:04:28,830 --> 00:04:32,180
+specification is about HTML imports,
+
+49
+00:04:32,180 --> 00:04:39,490
+the idea here was that we can actually import HTML files into HTML files just as we can import
+
+50
+00:04:39,520 --> 00:04:40,040
+CSS
+
+51
+00:04:40,070 --> 00:04:41,190
+and script files
+
+52
+00:04:41,360 --> 00:04:47,720
+but this is actually not a continuous specification because as you will learn in this course, there is
+
+53
+00:04:47,720 --> 00:04:54,650
+a more elegant way of importing your components and of importing the
+
+54
+00:04:54,660 --> 00:04:57,590
+HTML inside of your components.
+
+55
+00:04:57,680 --> 00:04:59,430
+So we will not need this
+
+56
+00:04:59,540 --> 00:05:05,510
+and indeed it's not continued, it's not added to our browsers and there are no plans to do so.

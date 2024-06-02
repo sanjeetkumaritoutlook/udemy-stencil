@@ -1,0 +1,163 @@
+1
+00:00:02,150 --> 00:00:07,550
+Let's dive right into it with let and const, these are two keywords we're going to see a lot in this
+
+2
+00:00:07,550 --> 00:00:13,910
+course especially const. Let and const are different ways of creating variables,
+
+3
+00:00:13,910 --> 00:00:17,860
+you know var, var creates a variable in Javascript.
+
+4
+00:00:17,870 --> 00:00:21,520
+Now the thing is, some variables never really change,
+
+5
+00:00:21,530 --> 00:00:23,690
+they are so-called constants,
+
+6
+00:00:23,840 --> 00:00:25,290
+technically though they are,
+
+7
+00:00:25,310 --> 00:00:30,070
+they are all just variables because Javascript only knows var. With ES6,
+
+8
+00:00:30,200 --> 00:00:38,090
+a version of Javascript, two different keywords were introduced, let and const. Var still works but you're
+
+9
+00:00:38,120 --> 00:00:42,690
+highly encouraged to use let and const. Let is
+
+10
+00:00:42,740 --> 00:00:49,880
+so to say the new var, you use it it for variable values, let and const are also changing something behind
+
+11
+00:00:49,880 --> 00:00:52,690
+the scenes about the scope of variables
+
+12
+00:00:52,790 --> 00:00:58,880
+but the most important takeaway here is use let if you want to create a variable that really is variable,
+
+13
+00:00:58,880 --> 00:01:05,540
+use const if you plan on creating a constant value, so something which you only assign once and never
+
+14
+00:01:05,540 --> 00:01:06,340
+change
+
+15
+00:01:06,440 --> 00:01:09,650
+and that is the case more often than you might think.
+
+16
+00:01:09,710 --> 00:01:16,430
+In this course, you will never see var, you will only see let and const and mostly it's const. So it
+
+17
+00:01:16,430 --> 00:01:17,820
+shouldn't confuse you,
+
+18
+00:01:17,840 --> 00:01:21,920
+it's simply the same as var, just in a more modern way 
+
+19
+00:01:22,040 --> 00:01:28,560
+and in the case of const, also clearly showing this is never going to receive a new value.
+
+20
+00:01:28,790 --> 00:01:31,930
+Now since this is always a bit clearer in practice,
+
+21
+00:01:32,000 --> 00:01:34,260
+let's have a look at it. For this,
+
+22
+00:01:34,280 --> 00:01:36,660
+it's best if it was a jsbin.com,
+
+23
+00:01:36,680 --> 00:01:42,860
+that's another web editor which makes it easy for us to enter some Javascript and see some console output.
+
+24
+00:01:43,430 --> 00:01:50,180
+For that, disable HTML and output up there and instead enable Javascript and console.
+
+25
+00:01:50,210 --> 00:01:55,740
+Now on the left side, you can write next generation Javascript, on the right side you'll see the output,
+
+26
+00:01:55,760 --> 00:01:57,400
+so there we can create a variable,
+
+27
+00:01:57,440 --> 00:02:05,530
+myName, set it equal to Max, console log myName
+
+28
+00:02:05,530 --> 00:02:09,190
+and if you now hit control enter, you'll see Max on the right,
+
+29
+00:02:09,210 --> 00:02:12,240
+not that new to you probably.
+
+30
+00:02:12,240 --> 00:02:19,520
+Obviously we can then set myName to Manu and if we then console log myName again,
+
+31
+00:02:19,680 --> 00:02:25,440
+it might also not totally surprise you that if you clear and run this again, you'll see Max from the
+
+32
+00:02:25,440 --> 00:02:29,230
+first statement and Manu from the second one.
+
+33
+00:02:29,250 --> 00:02:31,170
+Now if you change var to let,
+
+34
+00:02:31,280 --> 00:02:32,710
+nothing's going to change,
+
+35
+00:02:32,730 --> 00:02:35,830
+hitting run still works in the exact same way.
+
+36
+00:02:36,030 --> 00:02:43,150
+If you use const though like this, then clearing and running this will output Max
+
+37
+00:02:43,200 --> 00:02:48,210
+but then throw an error since we try to reassign a constant variable
+
+38
+00:02:48,240 --> 00:02:50,670
+which is kind of a strange name.
+
+39
+00:02:50,660 --> 00:02:53,490
+This is const and this is the idea behind const,
+
+40
+00:02:53,490 --> 00:02:59,040
+you can say this should never get a new value and if you then accidentally write some code where you
+
+41
+00:02:59,040 --> 00:03:03,520
+reassign it, you get the error and hence a chance to improve your code.

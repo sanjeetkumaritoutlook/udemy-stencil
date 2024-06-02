@@ -1,0 +1,151 @@
+1
+00:00:02,090 --> 00:00:06,700
+So in the last video, we learned about classes and we learned about properties and methods
+
+2
+00:00:06,730 --> 00:00:14,620
+there too, now next generation Javascript also offers a different syntax of initializing properties and methods
+
+3
+00:00:14,770 --> 00:00:19,060
+and actually, it is this more modern syntax I'll use in this course,
+
+4
+00:00:19,100 --> 00:00:21,230
+so I want to show it to you here too.
+
+5
+00:00:21,470 --> 00:00:27,110
+You already learned that properties are like variables you attach to classes and objects, methods are
+
+6
+00:00:27,110 --> 00:00:34,010
+like functions attached to classes and objects and you learned about this syntax where we set up properties
+
+7
+00:00:34,010 --> 00:00:35,550
+in the constructor function,
+
+8
+00:00:35,720 --> 00:00:43,340
+now there is a more modern syntax which spares us using this constructor function. With next generation
+
+9
+00:00:43,340 --> 00:00:46,310
+Javascript as we will use it in this course,
+
+10
+00:00:46,430 --> 00:00:52,630
+you can assign a property directly inside your class with myProperty equals value,
+
+11
+00:00:52,820 --> 00:00:55,610
+so you skip the constructor function call.
+
+12
+00:00:55,790 --> 00:01:00,380
+Behind the scenes, this will still be transformed to use constructor functions but you have an easier
+
+13
+00:01:00,380 --> 00:01:03,950
+time writing this and for methods, it's pretty similar.
+
+14
+00:01:03,950 --> 00:01:05,060
+This is the old way
+
+15
+00:01:05,060 --> 00:01:07,190
+I showed you in the last lecture,
+
+16
+00:01:07,250 --> 00:01:13,820
+now the next generation Javascript way is to use the syntax from the left where you set up a property
+
+17
+00:01:14,240 --> 00:01:20,870
+and simply think of a method as a property which stores a function as a value and then you end up with
+
+18
+00:01:20,870 --> 00:01:21,520
+that,
+
+19
+00:01:21,710 --> 00:01:25,970
+myMethod equals and then an arrow function.
+
+20
+00:01:25,970 --> 00:01:32,890
+The great advantage of this syntax is that since you use an arrow function as a property value here, you've
+
+21
+00:01:32,900 --> 00:01:39,200
+got no problems with the this keyword and that's the exact reason why we will use this syntax here on
+
+22
+00:01:39,200 --> 00:01:44,090
+the bottom right corner and the syntax on the bottom left corner throughout this course,
+
+23
+00:01:44,090 --> 00:01:46,880
+let me show the syntaxes to you.
+
+24
+00:01:46,970 --> 00:01:52,130
+Back to JSBin on the project we already worked on, here with the human and the person class,
+
+25
+00:01:52,400 --> 00:01:58,190
+we can get rid of the constructor in the human class and get rid of the this keyword and just set gender
+
+26
+00:01:58,220 --> 00:02:06,770
+equal to male and printGender can be set equal to an arrow function where we console log this
+
+27
+00:02:06,770 --> 00:02:07,400
+gender,
+
+28
+00:02:07,400 --> 00:02:13,280
+still using the this keyword in here when we reach out to the property though, you may ignore that error
+
+29
+00:02:13,280 --> 00:02:14,280
+for now.
+
+30
+00:02:14,630 --> 00:02:19,670
+The same in the person, we no longer need the constructor and we no longer need to call super for that
+
+31
+00:02:19,670 --> 00:02:20,760
+reason,
+
+32
+00:02:20,810 --> 00:02:27,690
+instead what we do is we call this name without this, just name equal Max and gender equal female
+
+33
+00:02:27,710 --> 00:02:35,760
+if you want to and print my name equals an arrow function too, like this.
+
+34
+00:02:35,790 --> 00:02:41,260
+Now if we clear this and run this, you will get an error because it doesn't recognize the syntax,
+
+35
+00:02:41,610 --> 00:02:48,190
+you actually need to go to the dropdown where it says Javascript and choose ES6 babel here.
+
+36
+00:02:48,190 --> 00:02:52,180
+If you do this and hit clear and run, you'll see Max and female,
+
+37
+00:02:52,200 --> 00:02:55,440
+you still see the errors on the left but you may ignore them,
+
+38
+00:02:55,440 --> 00:03:01,710
+this is the syntax which is next generation Javascript which we will actually use in this course.
